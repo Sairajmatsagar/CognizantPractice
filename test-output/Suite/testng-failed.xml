@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://www.saucedemo.com/v1/"/>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.cognizant.actualTestNGPractise.TestAddToCart">
+        <methods>
+          <include name="loginIntoApplication"/>
+          <include name="testAddToCart"/>
+          <include name="closeDb"/>
+          <include name="browserSetup"/>
+          <include name="dbConnection"/>
+          <include name="logoutFromApplication"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.cognizant.actualTestNGPractise.TestAddToCart -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.cognizant.actualTestNGPractise.TestAddToCart">
+        <methods>
+          <include name="loginIntoApplication"/>
+          <include name="closeDb"/>
+          <include name="testAddToCart"/>
+          <include name="browserSetup"/>
+          <include name="dbConnection"/>
+          <include name="logoutFromApplication"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.cognizant.actualTestNGPractise.TestAddToCart -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
