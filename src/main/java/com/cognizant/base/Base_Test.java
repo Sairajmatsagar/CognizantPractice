@@ -27,7 +27,7 @@ public class Base_Test {
 	
 	@Parameters({"url","browser"})
 	@BeforeClass
-	public void browserSetup(String url, @Optional("Edge")  String browser) {
+	public void browserSetup(@Optional("https://www.saucedemo.com/v1/")String url, @Optional("Edge")  String browser) {
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();

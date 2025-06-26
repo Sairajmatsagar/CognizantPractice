@@ -55,18 +55,182 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>26/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 18 12:08:11 IST 2025</td>
+<td>Started on:</td><td>Thu Jun 26 15:24:51 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (56 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59017 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>regression </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestAddToCart.browserSetup()'><b>browserSetup</b><br>Test class: com.cognizant.actualTestNGPractise.TestAddToCart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061543916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061543916'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1750931710</td>
+<td>com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestAddToCart.teardown()'><b>teardown</b><br>Test class: com.cognizant.actualTestNGPractise.TestAddToCart</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestAddToCart.loginIntoApplication()'><b>loginIntoApplication</b><br>Test class: com.cognizant.actualTestNGPractise.TestAddToCart</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestAddToCart.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: com.cognizant.actualTestNGPractise.TestAddToCart</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart()'><b>addToCart</b><br>Test class: com.cognizant.actualTestNGPractise.DepedencyPractice</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart(DepedencyPractice.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530446316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530446316'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart(DepedencyPractice.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AssertionPractice.softassertionPracitce()'><b>softassertionPracitce</b><br>Test class: com.cognizant.actualTestNGPractise.AssertionPractice</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Men&apos;s Shoes, Clothing &amp; Accessories. Nike IN] but found [sairaj]
+	at com.cognizant.actualTestNGPractise.AssertionPractice.softassertionPracitce(AssertionPractice.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1962329560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1962329560'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Men&apos;s Shoes, Clothing &amp; Accessories. Nike IN] but found [sairaj]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.cognizant.actualTestNGPractise.AssertionPractice.softassertionPracitce(AssertionPractice.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>com.cognizant.actualTestNGPractise.AssertionPractice@1c1bbc4e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,15 +240,210 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.cognizant.actualTestNGPractise.DataProviderPrctice.loginIntoApllication()'><b>loginIntoApllication</b><br>Test class: com.cognizant.actualTestNGPractise.DataProviderPrctice<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>15</td>
+<td>com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AnnoPractice.testB()'><b>testB</b><br>Test class: com.cognizant.actualTestNGPractise.AnnoPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AfterSuitePractice.suiteAnnotationPractice()'><b>suiteAnnotationPractice</b><br>Test class: com.cognizant.actualTestNGPractise.AfterSuitePractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.AfterSuitePractice@45752059</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.DataProviderPrctice.loginIntoApllication()'><b>loginIntoApllication</b><br>Test class: com.cognizant.actualTestNGPractise.DataProviderPrctice<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>9</td>
+<td>com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.PriorityPracitce.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.PriorityPracitce</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.PriorityPracitce@49438269</td></tr>
+<tr>
 <td title='com.cognizant.xmlpractice.ClassB.test6()'><b>test6</b><br>Test class: com.cognizant.xmlpractice.ClassB</td>
 <td></td>
 <td>0</td>
-<td>com.cognizant.xmlpractice.ClassB@2a4fb17b</td></tr>
+<td>com.cognizant.xmlpractice.ClassB@bcec361</td></tr>
+<tr>
+<td title='practicetestng.Demo.testRemoveProductFromCart()'><b>testRemoveProductFromCart</b><br>Test class: practicetestng.Demo</td>
+<td></td>
+<td>0</td>
+<td>practicetestng.Demo@ba2f4ec</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AnnoPractice.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.AnnoPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.PriorityPracitce.testC()'><b>testC</b><br>Test class: com.cognizant.actualTestNGPractise.PriorityPracitce</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.PriorityPracitce@49438269</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.InvocationCountPractice.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.InvocationCountPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.InvocationCountPractice.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.InvocationCountPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.DataProviderPrctice.loginIntoApllication()'><b>loginIntoApllication</b><br>Test class: com.cognizant.actualTestNGPractise.DataProviderPrctice<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>10</td>
+<td>com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassB.test5()'><b>test5</b><br>Test class: com.cognizant.xmlpractice.ClassB</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassB@bcec361</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassB.test4()'><b>test4</b><br>Test class: com.cognizant.xmlpractice.ClassB</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassB@bcec361</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AssertionPractice.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.AssertionPractice</td>
+<td></td>
+<td>18</td>
+<td>com.cognizant.actualTestNGPractise.AssertionPractice@1c1bbc4e</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassC.test7()'><b>test7</b><br>Test class: com.cognizant.xmlpractice.ClassC</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassC@26794848</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassA.test3()'><b>test3</b><br>Test class: com.cognizant.xmlpractice.ClassA</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassA@302552ec</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestLogin.loginWithValidCredential()'><b>loginWithValidCredential</b><br>Test class: com.cognizant.actualTestNGPractise.TestLogin</td>
+<td></td>
+<td>4</td>
+<td>com.cognizant.actualTestNGPractise.TestLogin@4b2bac3f</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.InvocationCountPractice.testA()'><b>testA</b><br>Test class: com.cognizant.actualTestNGPractise.InvocationCountPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassC.test8()'><b>test8</b><br>Test class: com.cognizant.xmlpractice.ClassC</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassC@26794848</td></tr>
+<tr>
+<td title='practicetestng.Demo.testAddToCart()'><b>testAddToCart</b><br>Test class: practicetestng.Demo</td>
+<td></td>
+<td>0</td>
+<td>practicetestng.Demo@ba2f4ec</td></tr>
 <tr>
 <td title='com.cognizant.xmlpractice.ClassA.test2()'><b>test2</b><br>Test class: com.cognizant.xmlpractice.ClassA</td>
 <td></td>
 <td>0</td>
-<td>com.cognizant.xmlpractice.ClassA@313ac989</td></tr>
+<td>com.cognizant.xmlpractice.ClassA@302552ec</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.DataProviderPrctice.loginIntoApllication()'><b>loginIntoApllication</b><br>Test class: com.cognizant.actualTestNGPractise.DataProviderPrctice<br>Parameters: locked_out_user, secret_sauce</td>
+<td></td>
+<td>10</td>
+<td>com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.AnnoPractice.testC()'><b>testC</b><br>Test class: com.cognizant.actualTestNGPractise.AnnoPractice</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.PriorityPracitce.testB()'><b>testB</b><br>Test class: com.cognizant.actualTestNGPractise.PriorityPracitce</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.PriorityPracitce@49438269</td></tr>
+<tr>
+<td title='com.cognizant.xmlpractice.ClassA.test1()'><b>test1</b><br>Test class: com.cognizant.xmlpractice.ClassA</td>
+<td></td>
+<td>0</td>
+<td>com.cognizant.xmlpractice.ClassA@302552ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart()'><b>removeProductFromCart</b><br>Test class: com.cognizant.actualTestNGPractise.DepedencyPractice</td>
+<td><div><pre>java.lang.Throwable: Method com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31 depends on not successfully finished methods 
+[com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253601149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253601149'><pre>java.lang.Throwable: Method com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31 depends on not successfully finished methods 
+[com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31</td></tr>
+<tr>
+<td title='com.cognizant.actualTestNGPractise.TestAddToCart.testAddToCart()'><b>testAddToCart</b><br>Test class: com.cognizant.actualTestNGPractise.TestAddToCart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2144665602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2144665602'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f</td></tr>
 </table><p>
 </body>
 </html>

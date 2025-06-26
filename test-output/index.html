@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">30 methods, 2 failed,  2 skipped,  26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DepedencyPractice" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AssertionPractice" class="method navigator-link" hash-for-method="softassertionPracitce">softassertionPracitce</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DepedencyPractice" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.TestAddToCart" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +141,132 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DataProviderPrctice" class="method navigator-link" hash-for-method="loginIntoApllication(performance_glitch_user, secret_sauce)">loginIntoApllication(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DataProviderPrctice" class="method navigator-link" hash-for-method="loginIntoApllication(problem_user, secret_sauce)">loginIntoApllication(problem_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DataProviderPrctice" class="method navigator-link" hash-for-method="loginIntoApllication(standard_user, secret_sauce)">loginIntoApllication(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.DataProviderPrctice" class="method navigator-link" hash-for-method="loginIntoApllication(locked_out_user, secret_sauce)">loginIntoApllication(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.TestLogin" class="method navigator-link" hash-for-method="loginWithValidCredential">loginWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AfterSuitePractice" class="method navigator-link" hash-for-method="suiteAnnotationPractice">suiteAnnotationPractice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassA" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassA" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassA" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassB" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassB" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassB" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassC" class="method navigator-link" hash-for-method="test7">test7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.xmlpractice.ClassC" class="method navigator-link" hash-for-method="test8">test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.PriorityPracitce" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AnnoPractice" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.InvocationCountPractice" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.InvocationCountPractice" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AssertionPractice" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.InvocationCountPractice" class="method navigator-link" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="practicetestng.Demo" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AnnoPractice" class="method navigator-link" hash-for-method="testB">testB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.PriorityPracitce" class="method navigator-link" hash-for-method="testB">testB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.PriorityPracitce" class="method navigator-link" hash-for-method="testC">testC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.cognizant.actualTestNGPractise.AnnoPractice" class="method navigator-link" hash-for-method="testC">testC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="practicetestng.Demo" class="method navigator-link" hash-for-method="testRemoveProductFromCart">testRemoveProductFromCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,12 +281,269 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.DepedencyPractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart(DepedencyPractice.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.AssertionPractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="softassertionPracitce">
+                  </a> <!-- softassertionPracitce -->
+                  <span class="method-name">softassertionPracitce</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Men&apos;s Shoes, Clothing &amp; Accessories. Nike IN] but found [sairaj]
+	at com.cognizant.actualTestNGPractise.AssertionPractice.softassertionPracitce(AssertionPractice.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.DepedencyPractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeProductFromCart">
+                  </a> <!-- removeProductFromCart -->
+                  <span class="method-name">removeProductFromCart</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31 depends on not successfully finished methods 
+[com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.TestAddToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.xmlpractice.ClassA</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.AfterSuitePractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="suiteAnnotationPractice">
+                  </a> <!-- suiteAnnotationPractice -->
+                  <span class="method-name">suiteAnnotationPractice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.TestLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredential">
+                  </a> <!-- loginWithValidCredential -->
+                  <span class="method-name">loginWithValidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.xmlpractice.ClassC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7">
+                  </a> <!-- test7 -->
+                  <span class="method-name">test7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test8">
+                  </a> <!-- test8 -->
+                  <span class="method-name">test8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.AnnoPractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testB">
+                  </a> <!-- testB -->
+                  <span class="method-name">testB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testC">
+                  </a> <!-- testC -->
+                  <span class="method-name">testC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">practicetestng.Demo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveProductFromCart">
+                  </a> <!-- testRemoveProductFromCart -->
+                  <span class="method-name">testRemoveProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.InvocationCountPractice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.cognizant.xmlpractice.ClassB</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="test6">
@@ -141,14 +556,83 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.cognizant.xmlpractice.ClassA</span>
+              <span class="class-name">com.cognizant.actualTestNGPractise.AssertionPractice</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.PriorityPracitce</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA">
+                  </a> <!-- testA -->
+                  <span class="method-name">testA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testB">
+                  </a> <!-- testB -->
+                  <span class="method-name">testB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testC">
+                  </a> <!-- testC -->
+                  <span class="method-name">testC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cognizant.actualTestNGPractise.DataProviderPrctice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIntoApllication(performance_glitch_user, secret_sauce)">
+                  </a> <!-- loginIntoApllication(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">loginIntoApllication</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIntoApllication(problem_user, secret_sauce)">
+                  </a> <!-- loginIntoApllication(problem_user, secret_sauce) -->
+                  <span class="method-name">loginIntoApllication</span>
+                  <span class="parameters">(problem_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIntoApllication(standard_user, secret_sauce)">
+                  </a> <!-- loginIntoApllication(standard_user, secret_sauce) -->
+                  <span class="method-name">loginIntoApllication</span>
+                  <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIntoApllication(locked_out_user, secret_sauce)">
+                  </a> <!-- loginIntoApllication(locked_out_user, secret_sauce) -->
+                  <span class="method-name">loginIntoApllication</span>
+                  <span class="parameters">(locked_out_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,15 +648,21 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cognizant.xmlpractice.ClassA&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.AfterSuitePractice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.DataProviderPrctice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.base.Bast_Test_Practice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.TestLogin&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.TestAddToCart&quot;/&gt;
       &lt;class name=&quot;com.cognizant.xmlpractice.ClassB&quot;/&gt;
       &lt;class name=&quot;com.cognizant.xmlpractice.ClassC&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.xmlpractice.ClassA&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.DepedencyPractice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.InvocationCountPractice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.PriorityPracitce&quot;/&gt;
+      &lt;class name=&quot;practicetestng.Demo&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.AssertionPractice&quot;/&gt;
+      &lt;class name=&quot;com.cognizant.actualTestNGPractise.AnnoPractice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -186,7 +676,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (14 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,10 +699,30 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test4</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -232,20 +742,132 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test2')
-data.setCell(0, 2, 'com.cognizant.xmlpractice.ClassA')
-data.setCell(0, 3, 6);
+data.setCell(0, 1, 'softassertionPracitce')
+data.setCell(0, 2, 'com.cognizant.actualTestNGPractise.AssertionPractice')
+data.setCell(0, 3, 21154);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test6')
-data.setCell(1, 2, 'com.cognizant.xmlpractice.ClassB')
-data.setCell(1, 3, 3);
+data.setCell(1, 1, 'testA')
+data.setCell(1, 2, 'com.cognizant.actualTestNGPractise.AssertionPractice')
+data.setCell(1, 3, 18262);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginIntoApllication')
+data.setCell(2, 2, 'com.cognizant.actualTestNGPractise.DataProviderPrctice')
+data.setCell(2, 3, 15019);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginIntoApllication')
+data.setCell(3, 2, 'com.cognizant.actualTestNGPractise.DataProviderPrctice')
+data.setCell(3, 3, 10828);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginIntoApllication')
+data.setCell(4, 2, 'com.cognizant.actualTestNGPractise.DataProviderPrctice')
+data.setCell(4, 3, 10654);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginIntoApllication')
+data.setCell(5, 2, 'com.cognizant.actualTestNGPractise.DataProviderPrctice')
+data.setCell(5, 3, 9492);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginWithValidCredential')
+data.setCell(6, 2, 'com.cognizant.actualTestNGPractise.TestLogin')
+data.setCell(6, 3, 4284);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addToCart')
+data.setCell(7, 2, 'com.cognizant.actualTestNGPractise.DepedencyPractice')
+data.setCell(7, 3, 30);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testC')
+data.setCell(8, 2, 'com.cognizant.actualTestNGPractise.PriorityPracitce')
+data.setCell(8, 3, 11);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test7')
+data.setCell(9, 2, 'com.cognizant.xmlpractice.ClassC')
+data.setCell(9, 3, 9);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test3')
+data.setCell(10, 2, 'com.cognizant.xmlpractice.ClassA')
+data.setCell(10, 3, 6);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'suiteAnnotationPractice')
+data.setCell(11, 2, 'com.cognizant.actualTestNGPractise.AfterSuitePractice')
+data.setCell(11, 3, 5);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testAddToCart')
+data.setCell(12, 2, 'practicetestng.Demo')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testA')
+data.setCell(13, 2, 'com.cognizant.actualTestNGPractise.InvocationCountPractice')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testA')
+data.setCell(14, 2, 'com.cognizant.actualTestNGPractise.PriorityPracitce')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test5')
+data.setCell(15, 2, 'com.cognizant.xmlpractice.ClassB')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'removeProductFromCart')
+data.setCell(16, 2, 'com.cognizant.actualTestNGPractise.DepedencyPractice')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testB')
+data.setCell(17, 2, 'com.cognizant.actualTestNGPractise.AnnoPractice')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test6')
+data.setCell(18, 2, 'com.cognizant.xmlpractice.ClassB')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testRemoveProductFromCart')
+data.setCell(19, 2, 'practicetestng.Demo')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testA')
+data.setCell(20, 2, 'com.cognizant.actualTestNGPractise.AnnoPractice')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testA')
+data.setCell(21, 2, 'com.cognizant.actualTestNGPractise.InvocationCountPractice')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test4')
+data.setCell(22, 2, 'com.cognizant.xmlpractice.ClassB')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testA')
+data.setCell(23, 2, 'com.cognizant.actualTestNGPractise.InvocationCountPractice')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test8')
+data.setCell(24, 2, 'com.cognizant.xmlpractice.ClassC')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test2')
+data.setCell(25, 2, 'com.cognizant.xmlpractice.ClassA')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testC')
+data.setCell(26, 2, 'com.cognizant.actualTestNGPractise.AnnoPractice')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testB')
+data.setCell(27, 2, 'com.cognizant.actualTestNGPractise.PriorityPracitce')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test1')
+data.setCell(28, 2, 'com.cognizant.xmlpractice.ClassA')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testAddToCart')
+data.setCell(29, 2, 'com.cognizant.actualTestNGPractise.TestAddToCart')
+data.setCell(29, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,33 +882,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.cognizant.xmlpractice.ClassB</span>
+              <span class="ignored-class-name">com.cognizant.actualTestNGPractise.AnnoPractice</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">test4</span>
+                <span class="ignored-method-name">closedbConnection</span>
                 <br/>
-                <span class="ignored-method-name">test5</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.cognizant.xmlpractice.ClassA</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">test3</span>
-                <br/>
-                <span class="ignored-method-name">test1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.cognizant.xmlpractice.ClassC</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">test8</span>
-                <br/>
-                <span class="ignored-method-name">test7</span>
+                <span class="ignored-method-name">dbConnection</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -298,18 +902,252 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cognizant.xmlpractice.ClassA</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test2</span>
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.TestAddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">dbConnection</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.base.Bast_Test_Practice</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">dbConnection</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.AfterSuitePractice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">suiteAnnotationPractice</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.DataProviderPrctice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginIntoApllication(standard_user, secret_sauce)</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginIntoApllication(locked_out_user, secret_sauce)</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginIntoApllication(problem_user, secret_sauce)</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginIntoApllication(performance_glitch_user, secret_sauce)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.TestLogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredential</span>
+                <span class="method-start">15086 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cognizant.xmlpractice.ClassB</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test6</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-name">test4</span>
+                <span class="method-start">19421 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">19436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test6</span>
+                <span class="method-start">19443 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.xmlpractice.ClassC</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test7</span>
+                <span class="method-start">19443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test8</span>
+                <span class="method-start">19454 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.xmlpractice.ClassA</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">19454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">19469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">19469 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.DepedencyPractice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addToCart</span>
+                <span class="method-start">19475 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.InvocationCountPractice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">19524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">19534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.PriorityPracitce</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testC</span>
+                <span class="method-start">19536 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.InvocationCountPractice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">19536 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.PriorityPracitce</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">19552 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practicetestng.Demo</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">browserSetup</span>
+                <span class="method-start">19553 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginIntoApplication</span>
+                <span class="method-start">19553 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.PriorityPracitce</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testB</span>
+                <span class="method-start">19553 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practicetestng.Demo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">19565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">19571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testRemoveProductFromCart</span>
+                <span class="method-start">19571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loginIntoApplication</span>
+                <span class="method-start">19571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">19579 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">19583 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.AssertionPractice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">softassertionPracitce</span>
+                <span class="method-start">19595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">40749 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.AnnoPractice</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">browserSetup</span>
+                <span class="method-start">59012 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginIntoApplication</span>
+                <span class="method-start">59016 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testA</span>
+                <span class="method-start">59017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">LogoutFromApplication</span>
+                <span class="method-start">59017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testB</span>
+                <span class="method-start">59017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loginIntoApplication</span>
+                <span class="method-start">59017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">LogoutFromApplication</span>
+                <span class="method-start">59017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginIntoApplication</span>
+                <span class="method-start">59030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59031 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">LogoutFromApplication</span>
+                <span class="method-start">59031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testC</span>
+                <span class="method-start">59031 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.actualTestNGPractise.TestAddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeDb</span>
+                <span class="method-start">59256 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cognizant.base.Bast_Test_Practice</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closedbConnection</span>
+                <span class="method-start">59263 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

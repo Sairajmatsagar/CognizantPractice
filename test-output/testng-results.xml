@@ -1,30 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="26" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T12:08:11 IST" name="Suite" finished-at="2025-06-18T12:08:11 IST" duration-ms="56">
+  <suite started-at="2025-06-26T15:24:51 IST" name="Suite" finished-at="2025-06-26T15:25:50 IST" duration-ms="59017">
     <groups>
       <group name="regression">
-        <method signature="ClassA.test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@313ac989]" name="test2" class="com.cognizant.xmlpractice.ClassA"/>
-        <method signature="ClassB.test6()[pri:0, instance:com.cognizant.xmlpractice.ClassB@2a4fb17b]" name="test6" class="com.cognizant.xmlpractice.ClassB"/>
+        <method signature="ClassA.test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" name="test2" class="com.cognizant.xmlpractice.ClassA"/>
+        <method signature="ClassB.test6()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" name="test6" class="com.cognizant.xmlpractice.ClassB"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="ClassA.test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@313ac989]" name="test2" class="com.cognizant.xmlpractice.ClassA"/>
+        <method signature="ClassA.test1()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" name="test1" class="com.cognizant.xmlpractice.ClassA"/>
+        <method signature="ClassA.test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" name="test2" class="com.cognizant.xmlpractice.ClassA"/>
+        <method signature="ClassB.test4()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" name="test4" class="com.cognizant.xmlpractice.ClassB"/>
       </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="ClassA.test3()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" name="test3" class="com.cognizant.xmlpractice.ClassA"/>
+        <method signature="ClassB.test5()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" name="test5" class="com.cognizant.xmlpractice.ClassB"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-06-18T12:08:11 IST" name="Test" finished-at="2025-06-18T12:08:11 IST" duration-ms="56">
+    <test started-at="2025-06-26T15:24:51 IST" name="Test" finished-at="2025-06-26T15:25:50 IST" duration-ms="59017">
       <class name="com.cognizant.xmlpractice.ClassB">
-        <test-method signature="test6()[pri:0, instance:com.cognizant.xmlpractice.ClassB@2a4fb17b]" started-at="2025-06-18T12:08:11 IST" name="test6" finished-at="2025-06-18T12:08:11 IST" duration-ms="3" status="PASS">
+        <test-method signature="test4()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" started-at="2025-06-26T15:25:10 IST" name="test4" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test5()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" started-at="2025-06-26T15:25:10 IST" name="test5" finished-at="2025-06-26T15:25:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method signature="test6()[pri:0, instance:com.cognizant.xmlpractice.ClassB@bcec361]" started-at="2025-06-26T15:25:10 IST" name="test6" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test6 -->
       </class> <!-- com.cognizant.xmlpractice.ClassB -->
+      <class name="com.cognizant.xmlpractice.ClassC">
+        <test-method signature="test7()[pri:0, instance:com.cognizant.xmlpractice.ClassC@26794848]" started-at="2025-06-26T15:25:10 IST" name="test7" finished-at="2025-06-26T15:25:10 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method signature="test8()[pri:0, instance:com.cognizant.xmlpractice.ClassC@26794848]" started-at="2025-06-26T15:25:10 IST" name="test8" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+      </class> <!-- com.cognizant.xmlpractice.ClassC -->
+      <class name="com.cognizant.actualTestNGPractise.AssertionPractice">
+        <test-method signature="softassertionPracitce()[pri:0, instance:com.cognizant.actualTestNGPractise.AssertionPractice@1c1bbc4e]" started-at="2025-06-26T15:25:10 IST" name="softassertionPracitce" finished-at="2025-06-26T15:25:31 IST" duration-ms="21154" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Men's Shoes, Clothing & Accessories. Nike IN] but found [sairaj]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Men's Shoes, Clothing & Accessories. Nike IN] but found [sairaj]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.cognizant.actualTestNGPractise.AssertionPractice.softassertionPracitce(AssertionPractice.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softassertionPracitce -->
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.AssertionPractice@1c1bbc4e]" started-at="2025-06-26T15:25:31 IST" name="testA" finished-at="2025-06-26T15:25:50 IST" duration-ms="18262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- com.cognizant.actualTestNGPractise.AssertionPractice -->
       <class name="com.cognizant.xmlpractice.ClassA">
-        <test-method signature="test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@313ac989]" started-at="2025-06-18T12:08:11 IST" name="test2" finished-at="2025-06-18T12:08:11 IST" duration-ms="6" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" started-at="2025-06-26T15:25:10 IST" name="test1" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test3()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" started-at="2025-06-26T15:25:10 IST" name="test3" finished-at="2025-06-26T15:25:10 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test2()[pri:0, instance:com.cognizant.xmlpractice.ClassA@302552ec]" started-at="2025-06-26T15:25:10 IST" name="test2" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
       </class> <!-- com.cognizant.xmlpractice.ClassA -->
+      <class name="com.cognizant.base.Bast_Test_Practice">
+        <test-method is-config="true" signature="dbConnection()[pri:0, instance:com.cognizant.base.Bast_Test_Practice@4d1c00d0]" started-at="2025-06-26T15:24:51 IST" name="dbConnection" finished-at="2025-06-26T15:24:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnection -->
+        <test-method is-config="true" signature="closedbConnection()[pri:0, instance:com.cognizant.base.Bast_Test_Practice@4d1c00d0]" started-at="2025-06-26T15:25:50 IST" name="closedbConnection" finished-at="2025-06-26T15:25:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedbConnection -->
+      </class> <!-- com.cognizant.base.Bast_Test_Practice -->
+      <class name="com.cognizant.actualTestNGPractise.DepedencyPractice">
+        <test-method signature="addToCart()[pri:0, instance:com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]" started-at="2025-06-26T15:25:10 IST" name="addToCart" finished-at="2025-06-26T15:25:10 IST" duration-ms="30" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart(DepedencyPractice.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="removeProductFromCart()[pri:0, instance:com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]" started-at="2025-06-26T15:25:10 IST" name="removeProductFromCart" finished-at="2025-06-26T15:25:10 IST" depends-on-methods="com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31 depends on not successfully finished methods 
+[com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.cognizant.actualTestNGPractise.DepedencyPractice.removeProductFromCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31 depends on not successfully finished methods 
+[com.cognizant.actualTestNGPractise.DepedencyPractice.addToCart() on instance com.cognizant.actualTestNGPractise.DepedencyPractice@2cd76f31]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromCart -->
+      </class> <!-- com.cognizant.actualTestNGPractise.DepedencyPractice -->
+      <class name="com.cognizant.actualTestNGPractise.AnnoPractice">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="browserSetup" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="testB()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="testB" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="testA" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="LogoutFromApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="LogoutFromApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromApplication -->
+        <test-method is-config="true" signature="LogoutFromApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="LogoutFromApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="testC()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="testC" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="tearDown" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LogoutFromApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.AnnoPractice@55fe41ea]" started-at="2025-06-26T15:25:50 IST" name="LogoutFromApplication" finished-at="2025-06-26T15:25:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromApplication -->
+      </class> <!-- com.cognizant.actualTestNGPractise.AnnoPractice -->
+      <class name="practicetestng.Demo">
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="browserSetup" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="testAddToCart()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="testAddToCart" finished-at="2025-06-26T15:25:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="testRemoveProductFromCart" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProductFromCart -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="logoutFromApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="logoutFromApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:practicetestng.Demo@ba2f4ec]" started-at="2025-06-26T15:25:10 IST" name="teardown" finished-at="2025-06-26T15:25:10 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- practicetestng.Demo -->
+      <class name="com.cognizant.actualTestNGPractise.DataProviderPrctice">
+        <test-method signature="loginIntoApllication(java.lang.String,java.lang.String)[pri:0, instance:com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c]" started-at="2025-06-26T15:24:51 IST" name="loginIntoApllication" data-provider="logindata" finished-at="2025-06-26T15:25:02 IST" duration-ms="10828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApllication -->
+        <test-method signature="loginIntoApllication(java.lang.String,java.lang.String)[pri:0, instance:com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c]" started-at="2025-06-26T15:24:51 IST" name="loginIntoApllication" data-provider="logindata" finished-at="2025-06-26T15:25:01 IST" duration-ms="10654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApllication -->
+        <test-method signature="loginIntoApllication(java.lang.String,java.lang.String)[pri:0, instance:com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c]" started-at="2025-06-26T15:24:51 IST" name="loginIntoApllication" data-provider="logindata" finished-at="2025-06-26T15:25:00 IST" duration-ms="9492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApllication -->
+        <test-method signature="loginIntoApllication(java.lang.String,java.lang.String)[pri:0, instance:com.cognizant.actualTestNGPractise.DataProviderPrctice@6a6cb05c]" started-at="2025-06-26T15:24:51 IST" name="loginIntoApllication" data-provider="logindata" finished-at="2025-06-26T15:25:06 IST" duration-ms="15019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApllication -->
+      </class> <!-- com.cognizant.actualTestNGPractise.DataProviderPrctice -->
+      <class name="com.cognizant.actualTestNGPractise.AfterSuitePractice">
+        <test-method signature="suiteAnnotationPractice()[pri:0, instance:com.cognizant.actualTestNGPractise.AfterSuitePractice@45752059]" started-at="2025-06-26T15:24:51 IST" name="suiteAnnotationPractice" finished-at="2025-06-26T15:24:51 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteAnnotationPractice -->
+      </class> <!-- com.cognizant.actualTestNGPractise.AfterSuitePractice -->
+      <class name="com.cognizant.actualTestNGPractise.PriorityPracitce">
+        <test-method signature="testC()[pri:-1, instance:com.cognizant.actualTestNGPractise.PriorityPracitce@49438269]" started-at="2025-06-26T15:25:10 IST" name="testC" finished-at="2025-06-26T15:25:10 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.PriorityPracitce@49438269]" started-at="2025-06-26T15:25:10 IST" name="testA" finished-at="2025-06-26T15:25:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method signature="testB()[pri:0, instance:com.cognizant.actualTestNGPractise.PriorityPracitce@49438269]" started-at="2025-06-26T15:25:10 IST" name="testB" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+      </class> <!-- com.cognizant.actualTestNGPractise.PriorityPracitce -->
+      <class name="com.cognizant.actualTestNGPractise.InvocationCountPractice">
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75]" started-at="2025-06-26T15:25:10 IST" name="testA" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75]" started-at="2025-06-26T15:25:10 IST" name="testA" finished-at="2025-06-26T15:25:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method signature="testA()[pri:0, instance:com.cognizant.actualTestNGPractise.InvocationCountPractice@367ffa75]" started-at="2025-06-26T15:25:10 IST" name="testA" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- com.cognizant.actualTestNGPractise.InvocationCountPractice -->
+      <class name="com.cognizant.actualTestNGPractise.TestLogin">
+        <test-method signature="loginWithValidCredential()[pri:0, instance:com.cognizant.actualTestNGPractise.TestLogin@4b2bac3f]" started-at="2025-06-26T15:25:06 IST" name="loginWithValidCredential" finished-at="2025-06-26T15:25:10 IST" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredential -->
+      </class> <!-- com.cognizant.actualTestNGPractise.TestLogin -->
+      <class name="com.cognizant.actualTestNGPractise.TestAddToCart">
+        <test-method is-config="true" signature="dbConnection()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:24:51 IST" name="dbConnection" finished-at="2025-06-26T15:24:51 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnection -->
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:10 IST" name="browserSetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1750931710506" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:10 IST" name="loginIntoApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="testAddToCart()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:10 IST" name="testAddToCart" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
+in C:\Users\HP\eclipse-workspace\TestNGPracticep1\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:10 IST" name="teardown" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:10 IST" name="logoutFromApplication" finished-at="2025-06-26T15:25:10 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="closeDb()[pri:0, instance:com.cognizant.actualTestNGPractise.TestAddToCart@4e08711f]" started-at="2025-06-26T15:25:50 IST" name="closeDb" finished-at="2025-06-26T15:25:50 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDb -->
+      </class> <!-- com.cognizant.actualTestNGPractise.TestAddToCart -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
